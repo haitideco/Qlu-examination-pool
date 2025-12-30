@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  教学点:
+  这是一个 "Drawable State List" (Drawable 状态列表)
+-->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 状态: "pressed" (按下) 为 true -->
+    <!-- (注意: 状态更具体的项必须放在前面) -->
+    <item android:state_pressed="true"
+        android:drawable="@drawable/ic_pressed" /> <!-- 引用 "按下" 图标 -->
+
+    <!-- 默认状态 (无 state) -->
+    <item android:drawable="@drawable/ic_normal" /> <!-- 引用 "默认" 图标 -->
+
+</selector>

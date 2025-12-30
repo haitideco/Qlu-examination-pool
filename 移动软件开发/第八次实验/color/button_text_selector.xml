@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  教学点:
+  这是一个 "Color State List" (颜色状态列表)
+  系统会根据 View 的状态 (按下、获取焦点等) 从这个列表中选择颜色。
+-->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 状态: "pressed" (按下) 为 true -->
+    <item android:state_pressed="true"
+        android:color="#FF0000" /> <!-- 红色 -->
+
+    <!-- 默认状态 (未指定任何 state) -->
+    <!-- (注意: 默认项必须在最后) -->
+    <item android:color="#0000FF" /> <!-- 蓝色 -->
+
+</selector>

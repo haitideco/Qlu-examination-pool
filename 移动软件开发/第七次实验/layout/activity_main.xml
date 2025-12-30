@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="实验1：ANR 与子线程的'诅咒'"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btn_trigger_anr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1. 触发 ANR (主线程休眠10秒)" />
+
+    <Button
+        android:id="@+id/btn_trigger_crash"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2. 修复 ANR (子线程休眠5秒并更新UI)" />
+
+    <TextView
+        android:id="@+id/tv_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="等待操作..."
+        android:textSize="16sp" />
+</LinearLayout>

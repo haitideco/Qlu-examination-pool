@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--
+        教学点:
+        我们在这里不使用 <View>，
+        这告诉 Android 加载我们的自定义 View 类，而不是标准的 View。
+    -->
+    <com.example.yidongexperiment08.CustomDrawingView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</FrameLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="实验2：Handler 深度解析"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btn_send_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1. sendMessage (发送复杂对象)" />
+
+    <Button
+        android:id="@+id/btn_post_runnable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2. post (发送Runnable任务)" />
+
+    <Button
+        android:id="@+id/btn_post_delayed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="3. postDelayed (3秒后显示时间)" />
+
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="4. 取消 (上述 Delayed 任务)" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="日志:"
+        android:layout_marginTop="16dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/tv_log"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f0f0f0"
+            android:padding="8dp" />
+    </ScrollView>
+</LinearLayout>
